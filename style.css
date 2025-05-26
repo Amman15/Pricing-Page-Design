@@ -1,0 +1,64 @@
+.hotsellerbutton {
+  box-shadow:inset 0px 1px 0px 0px #e184f3;
+  background:linear-gradient(to bottom, #a028b8 5%, #141113 100%);
+  background-color:#a028b8;
+  border-radius:10px;
+  border:3px solid #a511c0;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:10px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #9b14b3;
+}
+.hotsellerbutton:hover {
+  background:linear-gradient(to bottom, #141113 5%, #a028b8 100%);
+  background-color:#141113;
+}
+.hotsellerbutton:active {
+  position:relative;
+  top:1px;
+}
+body {
+  font-family: "Sono", sans-serif;
+  background-color: #EFEEEA;
+}
+.pricing-container{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  gap:2rem;
+}
+.plan-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.plan-price{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.plan-features > li{
+  list-style: none;
+  padding: 3px;
+  margin: 0;
+}
+.pricing-plan{
+  text-align: center;
+  flex: 1;
+  max-width: 350px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex-shrink: 1;
+}
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+  .pricing-container{
+    flex-direction: column;
+    height: 100%;
+  }
+}
